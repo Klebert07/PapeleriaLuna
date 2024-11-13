@@ -15,7 +15,7 @@ Route::post('login', [LoginController::class, 'store']);
 // Rutas protegidas
 Route::middleware('auth:sanctum')->group(function () {
     // Ruta de logout
-    Route::post('logout', [LoginController::class, 'logout']);
+    //Route::post('logout', [LoginController::class, 'logout']);
 
     // Recursos de API
     Route::apiResource('productos', ProductoController::class);

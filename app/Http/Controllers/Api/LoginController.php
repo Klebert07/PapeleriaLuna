@@ -39,12 +39,12 @@ class LoginController extends Controller
     }
 
     // Agreguemos también el método de logout
-    public function logout(Request $request)
+  /*  public function logout(Request $request)
     {
         $request->user()->currentAccessToken()->delete();
         
         return response()->json([
             'message' => 'Sesión cerrada exitosamente'
         ], Response::HTTP_OK);
-    }
+    }*/
 }
