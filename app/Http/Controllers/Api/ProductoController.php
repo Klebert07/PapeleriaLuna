@@ -33,7 +33,7 @@ class ProductoController extends Controller
     public function show(Producto $producto)
     {
         $this->authorize('Ver productos');
-        $producto = $producto->load('categoria');
+        $producto = $producto->load('inventario');
         return new ProductoResource($producto);
     }
 

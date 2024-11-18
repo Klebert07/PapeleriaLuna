@@ -24,10 +24,15 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->create([
             'name' => 'Arath Galvan Escobedo',
-            'email' => 'Arath@gmail.com',
+            'email' => 'arath@gmail.com',
         ])->assignRole('Editor');
 
-        User::factory(28)->create()->each(function ($user){
+        User::factory()->create([
+            'name' => 'Daniela Quiroz Torres',
+            'email' => 'daniela@gmail.com',
+        ])->assignRole('Editor');
+
+        User::factory(27)->create()->each(function ($user){
             $user->assignRole('Usuario');
         });
 
