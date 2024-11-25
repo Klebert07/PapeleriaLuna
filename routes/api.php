@@ -12,6 +12,10 @@ use App\Http\Controllers\Api\ClienteController;
 // Rutas públicas
 Route::post('login', [LoginController::class, 'store']);
 
+//AQUI
+Route::options('{all:.*}', function () {
+    return response()->json();
+    });
 // Rutas protegidas
 Route::middleware('auth:sanctum')->group(function () {
     // Ruta de logout
