@@ -84,7 +84,7 @@ class ProductoFactory extends Factory
                 'Carpeta de argollas',
                 'Carpeta de presentación',
                 'Archivador de palanca',
-                'Carpeta portfolio',
+                'Carpeta portafolio',
                 'Carpeta organizadora'
             ],
             'Separadores' => [
