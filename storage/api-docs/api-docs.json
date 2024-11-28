@@ -288,7 +288,7 @@
                         "description": "No autorizado"
                     },
                     "404": {
-                        "description": " no encontrada"
+                        "description": "Producto no encontrado"
                     }
                 },
                 "security": [
