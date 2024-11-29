@@ -11,7 +11,7 @@ namespace App\Http\Controllers;
  *     )
  * )
  * @OA\Server(
- *     url="http://papelerialuna-produccion.up.railway.app"
+ *     url="https://papelerialuna-produccion.up.railway.app"
  * )
  */
 
