@@ -21,7 +21,7 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 //AQUI
         $middleware->validateCsrfTokens(except: [
-            'http://localhost:8000/*',
+           // 'http://localhost:8000/*',
             'http://papelerialuna-produccion.up.railway.app/*',
             'api/*',
             'auth/*'

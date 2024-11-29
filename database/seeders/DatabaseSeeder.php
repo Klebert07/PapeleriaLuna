@@ -38,9 +38,9 @@ class DatabaseSeeder extends Seeder
 
         Empleado::factory(20)->create();
         Cliente::factory(10)->create();
-        Producto::factory(80)->create();
-        Inventario::factory(80)->create();
-        Venta::factory(100)->create(); 
+        Producto::factory(30)->create();
+        Inventario::factory(30)->create();
+        Venta::factory(50)->create(); 
 
         $empleados = Empleado::all();
         $user = User::all();
