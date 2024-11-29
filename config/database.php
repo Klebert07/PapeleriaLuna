@@ -45,7 +45,7 @@ return [
         'connections' => [
             'mysql' => [
                 'driver' => 'mysql',
-                'host' => env('DB_HOST', 'containers-us-west-123.railway.app'),
+                'host' => env('DB_HOST', '127.0.0.1'),
                 'port' => env('DB_PORT', '3306'),
                 'database' => env('DB_DATABASE', 'railway'),
                 'username' => env('DB_USERNAME', 'root'),
@@ -57,8 +57,8 @@ return [
                 'strict' => true,
                 'engine' => null,
                 'options' => [
-                    PDO::ATTR_TIMEOUT => 10,
-                ],
+                    PDO::ATTR_TIMEOUT => 5
+                ]
             ],
         ],
 
