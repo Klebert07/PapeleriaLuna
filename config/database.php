@@ -45,23 +45,20 @@ return [
         'connections' => [
             'mysql' => [
                 'driver' => 'mysql',
-                'url' => env('DB_URL'),
-                'host' => env('DB_HOST', 'containers-us-west-123.railway.app'),
+                'host' => env('DB_HOST', '127.0.0.1'),
                 'port' => env('DB_PORT', '3306'),
                 'database' => env('DB_DATABASE', 'railway'),
                 'username' => env('DB_USERNAME', 'root'),
-                'password' => env('DB_PASSWORD', 'fnJZUAtyoanhvFePprCShYZzESzciMgv'),
+                'password' => env('DB_PASSWORD', ''),
                 'unix_socket' => '',
                 'charset' => 'utf8mb4',
                 'collation' => 'utf8mb4_unicode_ci',
                 'prefix' => '',
-                'prefix_indexes' => true,
                 'strict' => true,
                 'engine' => null,
                 'options' => [
-                    PDO::ATTR_TIMEOUT => 10,
-                    PDO::MYSQL_ATTR_SSL_CA => null,
-                ],
+                    PDO::ATTR_TIMEOUT => 5
+                ]
             ],
         ],
 
