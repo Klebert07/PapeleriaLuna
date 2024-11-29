@@ -20,13 +20,7 @@ class AppServiceProvider extends ServiceProvider
         if(config('app.env') === 'production') {
             URL::forceScheme('https');
             
-            try {
-                $connection = DB::connection()->getPdo();
-                $connection->setAttribute(PDO::ATTR_TIMEOUT, 10);
-                $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            } catch (\Exception $e) {
-                Log::error('Database connection error: ' . $e->getMessage());
-            }
+           
         }
     }
 }
