@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 //AQUI
-    'allowed_origins' => [env('FRONTEND_URL'), 'http://papelerialuna-produccion.up.railway.app'],
+    'allowed_origins' => [env('FRONTEND_URL'), 'https://papelerialuna-produccion.up.railway.app'],
 
     'allowed_origins_patterns' => [],
 
