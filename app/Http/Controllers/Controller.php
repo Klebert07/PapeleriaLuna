@@ -11,7 +11,7 @@ namespace App\Http\Controllers;
  *     )
  * )
  * @OA\Server(
- *     url="http://localhost:8000"
+ *     url="http://papelerialuna-produccion.up.railway.app"
  * )
  */
 

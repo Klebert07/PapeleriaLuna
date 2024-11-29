@@ -50,7 +50,8 @@
             "@php artisan key:generate --ansi",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
-        ]
+        ],
+        "start": "php artisan l5-swagger:generate --no-ansi && php artisan optimize && php artisan serve --host=0.0.0.0 --port=$PORT"
     },
     "extra": {
         "laravel": {
