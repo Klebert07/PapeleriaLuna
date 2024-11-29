@@ -10,7 +10,7 @@
     },
     "servers": [
         {
-            "url": "https://papelerialuna-produccion.up.railway.app"
+            "url": "https://papelerialuna-production.up.railway.app"
         }
     ],
     "paths": {

@@ -318,7 +318,7 @@ return [
          * Constants which can be used in annotations
          */
         'constants' => [
-            'L5_SWAGGER_CONST_HOST' => env('L5_SWAGGER_CONST_HOST', 'https://papelerialuna-produccion.up.railway.app'),
+            'L5_SWAGGER_CONST_HOST' => env('L5_SWAGGER_CONST_HOST', 'https://papelerialuna-production.up.railway.app'),
         ],
     ],
 ];
